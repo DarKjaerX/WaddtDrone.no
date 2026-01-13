@@ -1,0 +1,3 @@
+Filer til nettsiden.
+
+VIKTIG!!

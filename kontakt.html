@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt Waddt Drone for profesjonell dronefoto og dronefilm. Vi svarer raskt på alle henvendelser.">
+  <title>Kontakt oss | Waddt Drone</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✈</span>
+        Waddt Drone
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="index.html#tjenester">Tjenester</a></li>
+          <li><a href="index.html#galleri">Galleri</a></li>
+          <li><a href="index.html#kalender">Kalender</a></li>
+          <li><a href="kontakt.html" class="nav-cta active">Kontakt oss</a></li>
+        </ul>
+      </nav>
+      
+      <button class="nav-toggle" aria-label="Åpne meny">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <span class="badge">Ta kontakt</span>
+          <h1>La oss snakke om ditt prosjekt</h1>
+          <p>Har du spørsmål eller ønsker du et tilbud? Fyll ut skjemaet, så tar vi kontakt med deg innen kort tid.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">E-post</span>
+                <span class="contact-item-value">kontakt@waddtdrone.no</span>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Dekningsområde</span>
+                <span class="contact-item-value">Vestfold</span>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item-icon">⏱️</div>
+              <div class="contact-item-text">
+                <span class="contact-item-label">Svartid</span>
+                <span class="contact-item-value">Innen 24 timer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Navn</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Ditt fulle navn" 
+                required
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="email">E-post</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="din@epost.no" 
+                required
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Telefon (valgfritt)</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="+47 XXX XX XXX"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Type tjeneste</label>
+              <input 
+                type="text" 
+                id="service" 
+                name="service" 
+                placeholder="F.eks. Dronefoto for eiendom"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Melding</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Fortell oss om ditt prosjekt..."
+                required
+              ></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send melding</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+            </button>
+            
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">✈</span>
+            Waddt Drone
+          </a>
+          <p>Profesjonell dronefoto & dronefilm</p>
+        </div>
+        
+        <ul class="footer-links">
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="index.html#tjenester">Tjenester</a></li>
+          <li><a href="index.html#galleri">Galleri</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Waddt Drone. Alle rettigheter reservert.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+    
+    // Form submission with Formspree
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<span>Sender...</span>';
+      submitBtn.disabled = true;
+      
+      const formData = new FormData(form);
+      
+      try {
+        const response = await fetch('https://formspree.io/f/xrbnwbdy', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          status.textContent = '✓ Meldingen ble sendt! Vi tar kontakt snart.';
+          status.className = 'form-status success';
+          form.reset();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (error) {
+        status.textContent = '✗ Noe gikk galt. Prøv igjen eller kontakt oss direkte på e-post.';
+        status.className = 'form-status error';
+      } finally {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
